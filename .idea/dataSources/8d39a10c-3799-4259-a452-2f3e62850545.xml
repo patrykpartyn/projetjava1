@@ -78,7 +78,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2019-01-06.18:25:39.153</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-01-18.12:52:01.703</IntrospectionTimestamp>
+      <IntrospectionStateNumber>672</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -124,5 +125,522 @@
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
+    <sequence id="22" parent="15" name="workerworkarea_id_seq">
+      <ObjectId>16681</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>672</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="23" parent="15" name="vehiclearearental_id_seq">
+      <ObjectId>16575</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>617</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="24" parent="15" name="vehiclecolor_id_seq">
+      <ObjectId>16584</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>618</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="25" parent="15" name="vehicles_id_seq">
+      <ObjectId>16593</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>619</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="15" name="vehicletype_id_seq">
+      <ObjectId>16602</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>620</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="27" parent="15" name="vehicletypedoors_id_seq">
+      <ObjectId>16611</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>621</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="28" parent="15" name="vehicletypeengine_id_seq">
+      <ObjectId>16641</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>631</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="29" parent="15" name="workerareawork_id_seq">
+      <ObjectId>16672</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>645</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="30" parent="15" name="workertype_id_seq">
+      <ObjectId>16663</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>643</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="31" parent="15" name="vehiclearearental">
+      <ObjectId>16577</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>622</StateNumber>
+    </table>
+    <table id="32" parent="15" name="vehiclecolor">
+      <ObjectId>16586</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>623</StateNumber>
+    </table>
+    <table id="33" parent="15" name="vehicles">
+      <ObjectId>16595</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>632</StateNumber>
+    </table>
+    <table id="34" parent="15" name="vehicletype">
+      <ObjectId>16604</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>624</StateNumber>
+    </table>
+    <table id="35" parent="15" name="vehicletypedoors">
+      <ObjectId>16613</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>625</StateNumber>
+    </table>
+    <table id="36" parent="15" name="vehicletypeengine">
+      <ObjectId>16643</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>632</StateNumber>
+    </table>
+    <table id="37" parent="15" name="workerareawork">
+      <ObjectId>16674</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>645</StateNumber>
+    </table>
+    <table id="38" parent="15" name="workertype">
+      <ObjectId>16665</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>643</StateNumber>
+    </table>
+    <table id="39" parent="15" name="workerworkarea">
+      <ObjectId>16683</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>672</StateNumber>
+    </table>
+    <column id="40" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>617</StateNumber>
+      <DefaultExpression>nextval(&apos;vehiclearearental_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>vehiclearearental_id_seq</SequenceName>
+    </column>
+    <column id="41" parent="31" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>617</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="42" parent="31" name="vehiclearearental_pkey">
+      <ObjectId>16582</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="31" name="vehiclearearental_pkey">
+      <ObjectId>16583</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehiclearearental_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="44" parent="31" name="vehiclearearental_id_check">
+      <ObjectId>16581</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="45" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+      <DefaultExpression>nextval(&apos;vehiclecolor_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>vehiclecolor_id_seq</SequenceName>
+    </column>
+    <column id="46" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>618</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="47" parent="32" name="vehiclecolor_pkey">
+      <ObjectId>16591</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="32" name="vehiclecolor_pkey">
+      <ObjectId>16592</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehiclecolor_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="49" parent="32" name="vehiclecolor_id_check">
+      <ObjectId>16590</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="50" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <DefaultExpression>nextval(&apos;vehicles_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>vehicles_id_seq</SequenceName>
+    </column>
+    <column id="51" parent="33" name="is_broken">
+      <Position>2</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="52" parent="33" name="created_date">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="53" parent="33" name="model">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>619</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="33" name="name">
+      <Position>5</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <StateNumber>619</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="33" name="price">
+      <Position>6</Position>
+      <DataType>real|0s</DataType>
+      <StateNumber>619</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="56" parent="33" name="production_date">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>619</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="57" parent="33" name="area_id">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="58" parent="33" name="color_id">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="59" parent="33" name="type_id">
+      <Position>10</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="60" parent="33" name="type_door_id">
+      <Position>11</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="61" parent="33" name="engine_id">
+      <Position>12</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>630</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="62" parent="33" name="vehicles_pkey">
+      <ObjectId>16600</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="33" name="vehicles_pkey">
+      <ObjectId>16601</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehicles_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="33" name="fk4jyf0ddpvv6ust0qyay0x0afx">
+      <ObjectId>16620</ObjectId>
+      <ColNames>area_id</ColNames>
+      <RefTableId>16577</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>vehiclearearental</RefTableName>
+      <RefKeyName>vehiclearearental_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="65" parent="33" name="fkk9beo4tanfw3q1ha0i63gngsu">
+      <ObjectId>16625</ObjectId>
+      <ColNames>color_id</ColNames>
+      <RefTableId>16586</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>vehiclecolor</RefTableName>
+      <RefKeyName>vehiclecolor_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="66" parent="33" name="fkb53fbojufiuu9me79aqera6v5">
+      <ObjectId>16630</ObjectId>
+      <ColNames>type_id</ColNames>
+      <RefTableId>16604</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>vehicletype</RefTableName>
+      <RefKeyName>vehicletype_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="67" parent="33" name="fk9d40l8q7g6mpp9pt405a54ioo">
+      <ObjectId>16635</ObjectId>
+      <ColNames>type_door_id</ColNames>
+      <RefTableId>16613</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>vehicletypedoors</RefTableName>
+      <RefKeyName>vehicletypedoors_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="68" parent="33" name="fkr18ug8kq1713eja02q3iqfaue">
+      <ObjectId>16650</ObjectId>
+      <ColNames>engine_id</ColNames>
+      <RefTableId>16643</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>vehicletypeengine</RefTableName>
+      <RefKeyName>vehicletypeengine_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <check id="69" parent="33" name="vehicles_price_check">
+      <ObjectId>16599</ObjectId>
+      <ColNames>price</ColNames>
+      <Predicate>price &lt;= (1000000)::double precision</Predicate>
+    </check>
+    <column id="70" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+      <DefaultExpression>nextval(&apos;vehicletype_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>vehicletype_id_seq</SequenceName>
+    </column>
+    <column id="71" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>620</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="72" parent="34" name="vehicletype_pkey">
+      <ObjectId>16609</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="73" parent="34" name="vehicletype_pkey">
+      <ObjectId>16610</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehicletype_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="74" parent="34" name="vehicletype_id_check">
+      <ObjectId>16608</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="75" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>621</StateNumber>
+      <DefaultExpression>nextval(&apos;vehicletypedoors_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>vehicletypedoors_id_seq</SequenceName>
+    </column>
+    <column id="76" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>621</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="77" parent="35" name="vehicletypedoors_pkey">
+      <ObjectId>16618</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="35" name="vehicletypedoors_pkey">
+      <ObjectId>16619</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehicletypedoors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="79" parent="35" name="vehicletypedoors_id_check">
+      <ObjectId>16617</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="80" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>631</StateNumber>
+      <DefaultExpression>nextval(&apos;vehicletypeengine_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>vehicletypeengine_id_seq</SequenceName>
+    </column>
+    <column id="81" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>631</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="82" parent="36" name="vehicletypeengine_pkey">
+      <ObjectId>16648</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="36" name="vehicletypeengine_pkey">
+      <ObjectId>16649</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>vehicletypeengine_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="84" parent="36" name="vehicletypeengine_id_check">
+      <ObjectId>16647</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="85" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>645</StateNumber>
+      <DefaultExpression>nextval(&apos;workerareawork_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>workerareawork_id_seq</SequenceName>
+    </column>
+    <column id="86" parent="37" name="area">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>645</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="87" parent="37" name="workerareawork_pkey">
+      <ObjectId>16679</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="88" parent="37" name="workerareawork_pkey">
+      <ObjectId>16680</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>workerareawork_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="89" parent="37" name="workerareawork_id_check">
+      <ObjectId>16678</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="90" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>643</StateNumber>
+      <DefaultExpression>nextval(&apos;workertype_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>workertype_id_seq</SequenceName>
+    </column>
+    <column id="91" parent="38" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>643</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="92" parent="38" name="workertype_pkey">
+      <ObjectId>16670</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="93" parent="38" name="workertype_pkey">
+      <ObjectId>16671</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>workertype_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="94" parent="38" name="workertype_id_check">
+      <ObjectId>16669</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
+    <column id="95" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>672</StateNumber>
+      <DefaultExpression>nextval(&apos;workerworkarea_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>workerworkarea_id_seq</SequenceName>
+    </column>
+    <column id="96" parent="39" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>672</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="97" parent="39" name="workerworkarea_pkey">
+      <ObjectId>16688</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="98" parent="39" name="workerworkarea_pkey">
+      <ObjectId>16689</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>workerworkarea_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="99" parent="39" name="workerworkarea_id_check">
+      <ObjectId>16687</ObjectId>
+      <ColNames>id</ColNames>
+      <Predicate>id &gt;= 0</Predicate>
+    </check>
   </database-model>
 </dataSource>

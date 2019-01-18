@@ -25,7 +25,7 @@ import repositories.*;
 import javax.validation.Valid;
 
 @Controller
-@SessionAttributes(names={"vehicleTypes", "vehicle"})
+@SessionAttributes(names={"vehicleTypes", "vehicle","vehicleTypesDoors","vehicleColors","vehicleAreas","vehicleEngine"})
 public class VehicleFormController {
 
 	protected final Log log = LogFactory.getLog(getClass());//Dodatkowy komponent do logowania

@@ -68,6 +68,9 @@ public class Vehicle {
         this.createdDate = new Date();
         this.vehicleType = new VehicleType();
         this.vehicleTypeDoors=new VehicleTypeDoors();
+        this.vehicleColor=new VehicleColor();
+        this.vehicleAreaRental=new VehicleAreaRental();
+        this.vehicleTypeEngine=new VehicleTypeEngine();
     }
 //    VehicleAreaRental vehicleAreaRental,
     public Vehicle(long id, String name, String model, Float price, Date productionDate, VehicleType vehicleType,VehicleTypeDoors vehicleTypeDoors,VehicleColor vehicleColor,VehicleAreaRental vehicleAreaRental, VehicleTypeEngine vehicleTypeEngine, Date creationDate) {
